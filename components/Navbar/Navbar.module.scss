@@ -1,0 +1,49 @@
+@import "@styles/mixins";
+
+.navbarContainer {
+  padding: 0.5rem 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navLinkContainer {
+    display: none;
+    @include mediumScreens {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    .navLink {
+      font-size: 0.8rem;
+      color: #22222a;
+      font-weight: 500;
+
+      &:hover {
+        color: #7c2edc;
+      }
+    }
+  }
+  .mobileMenuIcon {
+    @include mediumScreens {
+      display: none;
+    }
+  }
+}
+
+.mobileNavLinkContainerFluid{
+  background-color: #333;
+}
+.mobileNavLinkContainer {
+  display: grid;
+  grid-template-columns: auto;
+  .navLink {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,91 @@
+@import "@styles/mixins";
+
+.heroContainer {
+  height: calc(100svh - 60px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+
+  @include mediumScreens {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .heroTextContainer {
+    width: 100%;
+
+    @include mediumScreens {
+      width: 50%;
+    }
+
+    .heroText {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #22222a;
+      @include smallScreens {
+        font-size: 2rem;
+      }
+      @include mediumScreens {
+        font-size: 2.5rem;
+      }
+      @include largeScreens {
+        font-size: 3rem;
+      }
+    }
+
+    .heroSubText {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #6b6d85;
+      margin: 0.5rem 0;
+      @include smallScreens {
+        font-size: 1.2rem;
+      }
+      @include mediumScreens {
+        font-size: 1.4rem;
+      }
+    }
+
+    .heroDescription {
+      font-size: 0.9rem;
+      color: #6b6d85;
+      @include smallScreens {
+        font-size: 1rem;
+      }
+      @include mediumScreens {
+        font-size: 1.1rem;
+      }
+    }
+
+    .heroLink {
+      background: linear-gradient(135.42deg, #a66fff 8.52%, #6500cb 86.36%);
+      padding: 0.25rem 0.5rem;
+      display: inline-block;
+      border-radius: 120px;
+      margin-top: 1rem;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      @include mediumScreens {
+        font-size: 1rem;
+        width: 200px;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  .heroGIFContainer {
+    width: 100%;
+
+    @include mediumScreens {
+      width: 50%;
+    }
+  }
+}
