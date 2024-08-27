@@ -1,5 +1,5 @@
-import React from "react";
-import css from "./Container.module.scss";
+import React from 'react';
+import css from './Container.module.scss';
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -7,11 +7,7 @@ interface ContainerProps {
   style?: React.CSSProperties;
 }
 
-const ContainerFluid: React.FC<ContainerProps> = ({
-  children,
-  className,
-  style,
-}) => {
+const ContainerFluid: React.FC<ContainerProps> = ({ children, className, style }) => {
   return (
     <div className={`${className} ${css.containerFluid}`} style={style}>
       {children}
@@ -19,11 +15,7 @@ const ContainerFluid: React.FC<ContainerProps> = ({
   );
 };
 
-const BoundedContainer: React.FC<ContainerProps> = ({
-  children,
-  className,
-  style,
-}) => {
+const BoundedContainer: React.FC<ContainerProps> = ({ children, className, style }) => {
   return (
     <div className={`${className} ${css.boundedContainer}`} style={style}>
       {children}
@@ -31,11 +23,7 @@ const BoundedContainer: React.FC<ContainerProps> = ({
   );
 };
 
-const Container: React.FC<ContainerProps> = ({
-  children,
-  className,
-  style,
-}) => {
+const Container: React.FC<ContainerProps> = ({ children, className, style }) => {
   return (
     <div className={`${className} ${css.container}`} style={style}>
       {children}
