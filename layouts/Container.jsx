@@ -1,4 +1,4 @@
-import styles from "./Container.module.scss";
+import styles from './Container.module.scss';
 
 const ContainerFluid = ({ children, className, style }) => {
   return (
@@ -20,9 +20,7 @@ const SkewedContainerFluid = ({ children, className, color }) => {
   return (
     <ContainerFluid className={styles.skewedContainerFluid}>
       <div className={styles.skewBg} style={{ backgroundColor: color }}></div>
-      <Container className={`${styles.skewedContainer} ${className}`}>
-        {children}
-      </Container>
+      <Container className={`${styles.skewedContainer} ${className}`}>{children}</Container>
     </ContainerFluid>
   );
 };
@@ -35,7 +33,7 @@ const SkewedGradient = ({ className, color }) => {
         style={{
           background: color,
           backgroundBlendMode:
-            "hard-light, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal",
+            'hard-light, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal'
         }}
       ></div>
     </ContainerFluid>

@@ -1,7 +1,7 @@
-import Head from "next/head";
-import { NextSeo } from "next-seo";
+import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
-const keywords = ["respond", "now", "respond-now"];
+const keywords = ['respond', 'now', 'respond-now'];
 
 const SEO = () => {
   return (
@@ -9,10 +9,7 @@ const SEO = () => {
       <Head>
         <meta property="keywords" content={keywords} />
       </Head>
-      <NextSeo
-        title="Respond Now"
-        description="The Open-Source Slack App for Managing Your Organization's Incidents"
-      />
+      <NextSeo title="RespondNow" description="The Open-Source Slack App for Managing Your Organization's Incidents" />
     </>
   );
 };
