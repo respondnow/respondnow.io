@@ -17,7 +17,8 @@ const footerData: FooterDataType[] = [
     links: [
       {
         text: 'Documentation',
-        linkTo: '/documentation'
+        linkTo: 'https://respondnow.github.io/respond',
+        external: true
       },
       {
         text: 'Community',
@@ -32,31 +33,31 @@ const footerData: FooterDataType[] = [
   {
     heading: 'Join the Community',
     links: [
-      {
-        svg: <LinkedInSVG />,
-        linkTo: '#',
-        external: true
-      },
+      // {
+      //   svg: <LinkedInSVG />,
+      //   linkTo: '#',
+      //   external: true
+      // },
       {
         svg: <SlackSVG />,
-        linkTo: '#',
+        linkTo: 'https://app.slack.com/client/T08PSQ7BQ/C07K7TBH4P3',
         external: true
       },
       {
         svg: <GithubFooterSVG />,
-        linkTo: '#',
-        external: true
-      },
-      {
-        svg: <TwitterSVG />,
-        linkTo: '#',
-        external: true
-      },
-      {
-        svg: <DevSVG />,
-        linkTo: '#',
+        linkTo: 'https://github.com/respondnow/respond',
         external: true
       }
+      // {
+      //   svg: <TwitterSVG />,
+      //   linkTo: '#',
+      //   external: true
+      // },
+      // {
+      //   svg: <DevSVG />,
+      //   linkTo: '#',
+      //   external: true
+      // }
     ]
   }
 ];

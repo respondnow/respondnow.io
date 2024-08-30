@@ -65,9 +65,9 @@ const Navbar: React.FC = () => {
           <GitHubStars count={gitHub.stars} href="https://github.com/respondnow/respond" />
         </div>
         <Container className={css.navLinkContainer}>
-          <NavLink href="#" text="Documentation" />
-          <NavLink href="#" text="Community" />
-          <NavLink href="#" text="Blogs" />
+          <NavLink href="https://respondnow.github.io/respond" text="Documentation" isExternal={true} />
+          <NavLink href="/community" text="Community" />
+          <NavLink href="/blogs" text="Blogs" />
         </Container>
         <Image
           src={menu}
@@ -80,9 +80,9 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <ContainerFluid className={css.mobileNavLinkContainerFluid}>
           <BoundedContainer className={css.mobileNavLinkContainer}>
-            <NavLink href="#" text="Documentation" />
-            <NavLink href="#" text="Community" />
-            <NavLink href="#" text="Blogs" />
+            <NavLink href="https://respondnow.github.io/respond" text="Documentation" isExternal={true} />
+            <NavLink href="/community" text="Community" />
+            <NavLink href="/blogs" text="Blogs" />
           </BoundedContainer>
         </ContainerFluid>
       )}

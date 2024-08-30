@@ -48,7 +48,12 @@ const Footer = () => {
               {row.heading != 'Join the Community' ? (
                 ''
               ) : (
-                <Link target="_blank" href="#" rel="noopener noreferrer" className={css.linkButton}>
+                <Link
+                  target="_blank"
+                  href="https://github.com/respondnow/respond"
+                  rel="noopener noreferrer"
+                  className={css.linkButton}
+                >
                   Get started with RespondNow
                 </Link>
               )}

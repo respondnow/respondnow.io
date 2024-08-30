@@ -32,7 +32,12 @@ const Hero = (): React.ReactElement => {
           A simple and free solution to enable your operations teams and developers to create, manage and respond to
           your incidents directly from your slack workspace.
         </h3>
-        <Link href="#" passHref className={css.heroLink}>
+        <Link
+          href="https://github.com/respondnow/respond"
+          className={css.heroLink}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Get Started
         </Link>
       </Container>
