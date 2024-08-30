@@ -5,6 +5,7 @@ import menu from '@public/menu.svg';
 import Image from 'next/image';
 import css from './Navbar.module.scss';
 import Link from 'next/link';
+import { GithubFooterSVG, StarSVG } from '../SVG/FooterSVG';
 
 const NavLink = ({ href, text, isExternal = false }: { href: string; text: string; isExternal?: boolean }) => {
   return (
@@ -16,13 +17,53 @@ const NavLink = ({ href, text, isExternal = false }: { href: string; text: strin
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [gitHub, setGitHub] = React.useState({
+    stars: ''
+  });
+
+  React.useEffect(() => {
+    (async () => {
+      const url = 'https://api.github.com/repos/respondnow/respond';
+      await fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          setGitHub({
+            stars: data.stargazers_count
+          });
+        });
+    })();
+  }, []);
+
+  const GitHubStars = ({ count, href }: { count: string; href: string }) => {
+    return (
+      <div className="flex items-center">
+        <span className="inline-block scale-[0.70] mb-[1px]">
+          <GithubFooterSVG />
+        </span>
+        <Link href={href} target="_blank" className="flex items-center gap-1">
+          <div className="flex items-center bg-white border border-[rgba(217, 218, 229, 1)] rounded-md">
+            <div className="flex items-center text-xs gap-1 px-2 py-1">
+              <StarSVG />
+              <p>Star</p>
+            </div>
+            <div className="px-2 border-l text-xs font-semibold">
+              {count ? (parseInt(count) > 999 ? (parseInt(count) / 1000).toFixed(1) + 'k' : count) : '0'}
+            </div>
+          </div>
+        </Link>
+      </div>
+    );
+  };
 
   return (
     <ContainerFluid>
       <BoundedContainer className={css.navbarContainer}>
-        <Link href="/">
-          <Image src={logo} alt="Respond Now" height={20} />
-        </Link>
+        <div className="flex items-center justify-start gap-4">
+          <Link href="/">
+            <Image src={logo} alt="Respond Now" height={20} />
+          </Link>
+          <GitHubStars count={gitHub.stars} href="https://github.com/respondnow/respond" />
+        </div>
         <Container className={css.navLinkContainer}>
           <NavLink href="#" text="Documentation" />
           <NavLink href="#" text="Community" />
