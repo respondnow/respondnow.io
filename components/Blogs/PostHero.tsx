@@ -9,8 +9,8 @@ const PostHero = ({ frontmatter }: Pick<BlogPostProps, 'frontmatter'>) => {
     <BoundedContainer className="pt-14">
       <Link href="/blogs">
         <div className="text-xs font-medium text-hint flex items-center gap-1">
-          <span className="leading-none">&lt;</span>
-          <span className="leading-none">Blog Posts</span>
+          <span className="leading-none text-[#22222a]">&lt;</span>
+          <span className="leading-none text-[#22222a]">Blog Posts</span>
         </div>
       </Link>
       <Image src={frontmatter.image} alt={frontmatter.title} width={500} height={250} className="w-full h-auto mt-8" />

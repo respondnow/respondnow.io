@@ -44,9 +44,9 @@ const Navbar: React.FC = () => {
           <div className="flex items-center bg-white border border-[rgba(217, 218, 229, 1)] rounded-md">
             <div className="flex items-center text-xs gap-1 px-2 py-1">
               <StarSVG />
-              <p>Star</p>
+              <p className="text-[#00041882]">Star</p>
             </div>
-            <div className="px-2 border-l text-xs font-semibold">
+            <div className="px-2 border-l text-xs font-semibold text-[#00041882`]">
               {count ? (parseInt(count) > 999 ? (parseInt(count) / 1000).toFixed(1) + 'k' : count) : '0'}
             </div>
           </div>

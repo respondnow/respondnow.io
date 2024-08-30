@@ -14,11 +14,10 @@ const Footer = () => {
           <Link href="/">
             <Image src={logo} alt="Respond Now" height={30} />
           </Link>
-          <p className="mb-4 mt-2 text-sm text-[#6B6D85]">Copyright © 2024 RespondNow Authors. All rights reserved</p>
+          <p className="mb-4 mt-2 text-sm text-[#6B6D85]">Copyright © 2024 Harness Inc. All rights reserved</p>
           <p className="text-xs text-[#6B6D85]">
-            The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux
-            Foundation, please see our{' '}
-            <Link href="https://www.linuxfoundation.org/trademark-usage/" className="text-[#7D28DE]">
+            Harness Inc registered trademarks. For a list of trademarks of Harness Inc, please see our{' '}
+            <Link href="https://www.harness.io/legal/trademark" className="text-[#7D28DE]">
               Trademark Usage page
             </Link>
             .

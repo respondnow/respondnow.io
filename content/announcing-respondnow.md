@@ -26,11 +26,11 @@ The need of the hour is to enable developers to spend more time in training them
 
 We are thrilled to announce that RespondNow comes into existence to help achieve the community centric approach to responding to incidents. RespondNow project's focus is less on how to create and process the workflow of incidents but more on enabling the community to build reusable runbooks and eventually achieve faster response times or recovery times.
 
-What is RespondNow?
+#### What is RespondNow?
 
 It is an open source incident management server that runs on Kubernetes managed by you. It comes with a slack application for collaborating on the incident response. RespondNow is licensed under Apache2.
 
-RespondNow goals:
+#### RespondNow goals:
 
 - Build a free and easy to use incident management tool that operates entirely in your slack workspace. Make the collaboration around incident response native to your existing mode of collaboration.
 

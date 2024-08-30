@@ -2,10 +2,12 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { getAllPostSlugs, getPostData, BlogPostProps } from '@lib/posts';
 import PostContent from '@components/Blogs/PostContent';
 import PostHero from '@components/Blogs/PostHero';
+import SEO from '@scripts/NextSeo';
 
 export default function BlogPost({ postData }: { postData: BlogPostProps }) {
   return (
     <>
+      <SEO />
       <PostHero frontmatter={postData.frontmatter} />
       <PostContent {...postData} />
     </>
