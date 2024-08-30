@@ -17,7 +17,7 @@ const footerData: FooterDataType[] = [
     links: [
       {
         text: 'Documentation',
-        linkTo: 'https://respondnow.github.io/respond',
+        linkTo: 'https://respondnow.github.io/respondnow',
         external: true
       },
       {
