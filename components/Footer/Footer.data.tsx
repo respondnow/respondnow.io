@@ -22,7 +22,8 @@ const footerData: FooterDataType[] = [
       },
       {
         text: 'Community',
-        linkTo: '/community'
+        linkTo: 'https://app.slack.com/client/T08PSQ7BQ/C07K7TBH4P3',
+        external: true
       },
       {
         text: 'Blogs',

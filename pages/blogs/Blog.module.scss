@@ -1,0 +1,22 @@
+.blogListMainContainer {
+  padding: 3rem 0;
+  min-height: calc(80svh - 60px);
+
+  .blogList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    .blogCard {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      box-shadow:
+        0px 1px 2px 0px #0d0d120a,
+        0px 1px 3px 0px #0d0d120d;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 450px;
+    }
+  }
+}

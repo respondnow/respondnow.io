@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoundedContainer, Container } from '@/layouts';
+import { BoundedContainer, Container } from '@layouts';
 import lottie from 'lottie-web';
 import css from './Landing.module.scss';
 import Link from 'next/link';

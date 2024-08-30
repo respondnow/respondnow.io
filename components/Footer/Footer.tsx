@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import css from './Footer.module.scss';
-import { BoundedContainer, ContainerFluid } from '@/layouts';
+import { BoundedContainer, ContainerFluid } from '@layouts';
 import logo from '@public/respondNow.svg';
 import Image from 'next/image';
 import footerData from './Footer.data';

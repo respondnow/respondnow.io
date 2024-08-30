@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoundedContainer, Container, ContainerFluid } from '@/layouts';
+import { BoundedContainer, Container, ContainerFluid } from '@layouts';
 import logo from '@public/respondNow.svg';
 import menu from '@public/menu.svg';
 import Image from 'next/image';
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
         </div>
         <Container className={css.navLinkContainer}>
           <NavLink href="https://respondnow.github.io/respond" text="Documentation" isExternal={true} />
-          <NavLink href="/community" text="Community" />
+          <NavLink href="https://app.slack.com/client/T08PSQ7BQ/C07K7TBH4P3" text="Community" isExternal={true} />
           <NavLink href="/blogs" text="Blogs" />
         </Container>
         <Image
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
         <ContainerFluid className={css.mobileNavLinkContainerFluid}>
           <BoundedContainer className={css.mobileNavLinkContainer}>
             <NavLink href="https://respondnow.github.io/respond" text="Documentation" isExternal={true} />
-            <NavLink href="/community" text="Community" />
+            <NavLink href="https://app.slack.com/client/T08PSQ7BQ/C07K7TBH4P3" text="Community" isExternal={true} />
             <NavLink href="/blogs" text="Blogs" />
           </BoundedContainer>
         </ContainerFluid>
