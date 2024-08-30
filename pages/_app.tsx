@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import TagScripts from '@/scripts/TagScripts';
 import '@styles/globals.css';
@@ -9,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <TagScripts />
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
