@@ -18,7 +18,10 @@ const Footer = () => {
           <p className="text-xs text-[#6B6D85]">
             The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux
             Foundation, please see our{' '}
-            <Link href="https://www.linuxfoundation.org/trademark-usage/">Trademark Usage page</Link>.
+            <Link href="https://www.linuxfoundation.org/trademark-usage/" className="text-[#7D28DE]">
+              Trademark Usage page
+            </Link>
+            .
           </p>
         </div>
         <div className={css.linkContainer}>
