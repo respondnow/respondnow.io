@@ -14,13 +14,15 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"],
       "@includes/*": ["includes/*"],
-      "@layouts/*": ["layouts/*"],
+      "@layouts": ["layouts"],
       "@components/*": ["components/*"],
       "@scripts/*": ["scripts/*"],
       "@public/*": ["public/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@content/*": ["content/*"],
+      "@lib/*": ["lib/*"],
+      "@sections/*": ["sections/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
