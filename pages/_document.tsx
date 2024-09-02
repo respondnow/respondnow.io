@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <Seo />
+      <Seo page="Index" />
       <TagScripts />
       <body>
         <Main />

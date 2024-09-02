@@ -24,14 +24,14 @@ const Footer = () => {
           </p>
         </div>
         <div className={css.linkContainer}>
-          {footerData.map(row => (
-            <div key={row.heading}>
+          {footerData.map((row, index) => (
+            <div key={`${row.heading}-${index}`}>
               <h2>{row.heading}</h2>
               <ul
                 className={row.heading != 'Join the Community' ? '' : 'flex flex-wrap gap-x-3 sm:max-w-xs md:max-w-sm'}
               >
-                {row.links.map(link => (
-                  <li key={link.text}>
+                {row.links.map((link, index) => (
+                  <li key={`${link.text}-${index}`}>
                     <Link
                       href={link.linkTo}
                       target={link.external ? '_blank' : '_self'}
@@ -49,7 +49,7 @@ const Footer = () => {
               ) : (
                 <Link
                   target="_blank"
-                  href="https://github.com/respondnow/respond"
+                  href="https://respondnow.github.io/respondnow/getting-started/deploy-rn-server-with-helm/"
                   rel="noopener noreferrer"
                   className={css.linkButton}
                 >
