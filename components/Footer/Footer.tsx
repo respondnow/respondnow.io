@@ -4,7 +4,9 @@ import css from './Footer.module.scss';
 import { BoundedContainer, ContainerFluid } from '@layouts';
 import logo from '@public/respondNow.svg';
 import Image from 'next/image';
+import harnessLogo from '@public/harnessLogo.svg';
 import footerData from './Footer.data';
+import { HeartSVG } from '@components/SVG/FooterSVG';
 
 const Footer = () => {
   return (
@@ -60,6 +62,12 @@ const Footer = () => {
           ))}
         </div>
       </BoundedContainer>
+      <ContainerFluid className="py-4 bg-[#1B2E49] flex justify-center items-center gap-1">
+        <p className="text-xs text-white">Made with</p>
+        <HeartSVG />
+        <p className="text-xs text-white">by</p>
+        <Image src={harnessLogo} alt="Harness" height={16} width={75} />
+      </ContainerFluid>
     </ContainerFluid>
   );
 };

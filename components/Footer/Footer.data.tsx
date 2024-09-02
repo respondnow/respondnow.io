@@ -53,7 +53,7 @@ const footerData: FooterDataType[] = [
       //   svg: <TwitterSVG />,
       //   linkTo: '#',
       //   external: true
-      // },
+      // }
       // {
       //   svg: <DevSVG />,
       //   linkTo: '#',
