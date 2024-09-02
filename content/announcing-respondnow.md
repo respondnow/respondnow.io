@@ -20,7 +20,7 @@ Organizations have adopted cloud native technology to serve the needs of their c
 
 2. Resilience has long been seen as an Ops responsibility. Though the shift-left pattern has spilled into the service resilience in recent times, especially in the cloud native space, the bandwidth allocated for developers to spend time in the post-incident recovery continues to be miniscule.
 
-The need of the hour is to enable developers to spend more time in training themselves better and do what is required in the code for faster incident response. Developers and SREs need to be able to share and receive the best practices in the incident response process among the larger cloud native community. We realized that there is an opportunity to develop many runbooks for recovering cloud native incidents in a truly open source approach that is contributed and maintained by the community. This is the primary reason for starting a new open source community and project - ResponNow.
+The need of the hour is to enable developers to spend more time in training themselves better and do what is required in the code for faster incident response. Developers and SREs need to be able to share and receive the best practices in the incident response process among the larger cloud native community. We realized that there is an opportunity to develop many runbooks for recovering cloud native incidents in a truly open source approach that is contributed and maintained by the community. This is the primary reason for starting a new open source community and project - RespondNow.
 
 ## Introducing RespondNow
 
@@ -38,7 +38,7 @@ It is an open source incident management server that runs on Kubernetes managed 
 
 We have announced the availability of the first version of RespondNow with which you can create and manage the incidents using your Kubernetes namespace and your Slack workspace.
 
-Feel free to give it a [try](https://respondnow.github.io/respondnow/getting-started/deploy-rn-server-with-helm/) and provide your feedback through a GitHub issue here or through a slack message on our community slack channel respond-now.
+Feel free to give it a [try](https://respondnow.github.io/respondnow/getting-started/deploy-rn-server-with-helm/) and provide your feedback through a GitHub issue [here](https://github.com/respondnow/respondnow/issues/new/choose) or through a slack message on our community slack channel [#respond-now](https://app.slack.com/client/T08PSQ7BQ/C07K7TBH4P3) in CNCF Slack.
 
 **How to get started with RespondNow?**
 
@@ -46,7 +46,7 @@ All you need is a Kubernetes namespace that you manage. Follow the documentation
 
 **How to join the RespondNow community?**
 
-Our community is hosted at a slack channel called “**respond-now**” on the CNCF Slack workspace. If you are already signed in into the CNCF slack workspace, then go to the channel directly [here](https://app.slack.com/client/T08PSQ7BQ/C07K7TBH4P3), otherwise, sign up to CNCF Slack first [here](https://slack.cncf.io).
+Our community is hosted at a slack channel called **#respond-now** on the CNCF Slack workspace. If you are already signed in into the CNCF slack workspace, then go to the channel directly [here](https://app.slack.com/client/T08PSQ7BQ/C07K7TBH4P3), otherwise, sign up to CNCF Slack first [here](https://slack.cncf.io).
 
 **How to report feedback?**
 
