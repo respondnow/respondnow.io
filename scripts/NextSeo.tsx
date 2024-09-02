@@ -25,7 +25,7 @@ const SEO = ({ blog, page }: { blog?: BlogSEOProps; page: string }) => {
     <>
       <SEOKeywords blog={blog} />
       <NextSeo
-        title={blog ? page : `RespondNow`}
+        title={blog ? page : `RespondNow™`}
         description="The Open-Source Slack App for Managing Your Organization's Incidents"
         canonical={blog ? `https://respondnow.io/blog/${blog.slug}` : 'https://respondnow.io'}
         openGraph={{
@@ -42,6 +42,11 @@ const SEO = ({ blog, page }: { blog?: BlogSEOProps; page: string }) => {
             }
           ],
           site_name: 'RespondNow'
+        }}
+        twitter={{
+          handle: '@respondnow_io',
+          site: '@respondnow_io',
+          cardType: 'summary_large_image'
         }}
       />
     </>
