@@ -63,10 +63,12 @@ const Footer = () => {
         </div>
       </BoundedContainer>
       <ContainerFluid className="py-4 bg-[#1B2E49] flex justify-center items-center gap-1">
-        <p className="text-xs text-white">Made with</p>
+        <p className="text-xs text-white">Created with</p>
         <HeartSVG />
         <p className="text-xs text-white">by</p>
-        <Image src={harnessLogo} alt="Harness" height={16} width={75} />
+        <Link href="https://www.harness.io/" target="_blank" rel="noopener noreferrer">
+          <Image src={harnessLogo} alt="Harness" height={16} width={75} />
+        </Link>
       </ContainerFluid>
     </ContainerFluid>
   );
