@@ -7,7 +7,14 @@ import SEO from '@scripts/NextSeo';
 export default function BlogPost({ postData }: { postData: BlogPostProps }) {
   return (
     <>
-      <SEO />
+      <SEO
+        blog={{
+          seoImage: postData.frontmatter.image,
+          slug: postData.slug,
+          tag: [postData.frontmatter.tag]
+        }}
+        page={postData.frontmatter.title}
+      />
       <PostHero frontmatter={postData.frontmatter} />
       <PostContent {...postData} />
     </>

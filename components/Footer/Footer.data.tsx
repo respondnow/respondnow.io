@@ -26,8 +26,8 @@ const footerData: FooterDataType[] = [
         external: true
       },
       {
-        text: 'Blogs',
-        linkTo: '/blogs'
+        text: 'Blog',
+        linkTo: '/blog'
       }
     ]
   },
@@ -53,7 +53,7 @@ const footerData: FooterDataType[] = [
       //   svg: <TwitterSVG />,
       //   linkTo: '#',
       //   external: true
-      // },
+      // }
       // {
       //   svg: <DevSVG />,
       //   linkTo: '#',

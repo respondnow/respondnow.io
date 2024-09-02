@@ -26,14 +26,14 @@ const Hero = (): React.ReactElement => {
   return (
     <BoundedContainer className={css.heroContainer}>
       <Container className={css.heroTextContainer}>
-        <h1 className={css.heroText}>The Open source Slack App for Managing Your Organisation&apos;s Incidents</h1>
+        <h1 className={css.heroText}>The Open Source Slack App for Managing Your Organisation&apos;s Incidents</h1>
         <h2 className={css.heroSubText}>Free. Open Source. All from Slack.</h2>
         <h3 className={css.heroDescription}>
           A simple and free solution to enable your operations teams and developers to create, manage and respond to
           your incidents directly from your slack workspace.
         </h3>
         <Link
-          href="https://github.com/respondnow/respond"
+          href="https://respondnow.github.io/respondnow/getting-started/deploy-rn-server-with-helm/"
           className={css.heroLink}
           target="_blank"
           rel="noreferrer noopener"

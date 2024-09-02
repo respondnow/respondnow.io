@@ -4,7 +4,9 @@ import css from './Footer.module.scss';
 import { BoundedContainer, ContainerFluid } from '@layouts';
 import logo from '@public/respondNow.svg';
 import Image from 'next/image';
+import harnessLogo from '@public/harnessLogo.svg';
 import footerData from './Footer.data';
+import { HeartSVG } from '@components/SVG/FooterSVG';
 
 const Footer = () => {
   return (
@@ -24,14 +26,14 @@ const Footer = () => {
           </p>
         </div>
         <div className={css.linkContainer}>
-          {footerData.map(row => (
-            <div key={row.heading}>
+          {footerData.map((row, index) => (
+            <div key={`${row.heading}-${index}`}>
               <h2>{row.heading}</h2>
               <ul
                 className={row.heading != 'Join the Community' ? '' : 'flex flex-wrap gap-x-3 sm:max-w-xs md:max-w-sm'}
               >
-                {row.links.map(link => (
-                  <li key={link.text}>
+                {row.links.map((link, index) => (
+                  <li key={`${link.text}-${index}`}>
                     <Link
                       href={link.linkTo}
                       target={link.external ? '_blank' : '_self'}
@@ -49,7 +51,7 @@ const Footer = () => {
               ) : (
                 <Link
                   target="_blank"
-                  href="https://github.com/respondnow/respond"
+                  href="https://respondnow.github.io/respondnow/getting-started/deploy-rn-server-with-helm/"
                   rel="noopener noreferrer"
                   className={css.linkButton}
                 >
@@ -60,6 +62,12 @@ const Footer = () => {
           ))}
         </div>
       </BoundedContainer>
+      <ContainerFluid className="py-4 bg-[#1B2E49] flex justify-center items-center gap-1">
+        <p className="text-xs text-white">Made with</p>
+        <HeartSVG />
+        <p className="text-xs text-white">by</p>
+        <Image src={harnessLogo} alt="Harness" height={16} width={75} />
+      </ContainerFluid>
     </ContainerFluid>
   );
 };
