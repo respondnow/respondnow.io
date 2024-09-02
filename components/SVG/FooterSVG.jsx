@@ -71,10 +71,10 @@ export const StarSVG = () => {
       <path
         d="M7.56523 1.5L9.41923 5.1204L13.5652 5.70452L10.5652 8.52103L11.2732 12.5L7.56523 10.6204L3.85723 12.5L4.56523 8.52103L1.56523 5.70452L5.71123 5.1204L7.56523 1.5Z"
         stroke="#000418"
-        stroke-opacity="0.506"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeOpacity="0.506"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

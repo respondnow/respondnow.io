@@ -50,16 +50,16 @@ export default function Home({ posts }: HomeProps) {
                       <path
                         d="M4.75 10H15.25"
                         stroke="#7D28DE"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                       <path
                         d="M10 4.75L15.25 10L10 15.25"
                         stroke="#7D28DE"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
