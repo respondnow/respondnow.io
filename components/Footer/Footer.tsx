@@ -49,7 +49,7 @@ const Footer = () => {
               ) : (
                 <Link
                   target="_blank"
-                  href="https://github.com/respondnow/respond"
+                  href="https://respondnow.github.io/respondnow/getting-started/deploy-rn-server-with-helm/"
                   rel="noopener noreferrer"
                   className={css.linkButton}
                 >

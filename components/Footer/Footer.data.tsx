@@ -26,8 +26,8 @@ const footerData: FooterDataType[] = [
         external: true
       },
       {
-        text: 'Blogs',
-        linkTo: '/blogs'
+        text: 'Blog',
+        linkTo: '/blog'
       }
     ]
   },

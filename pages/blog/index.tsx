@@ -15,14 +15,14 @@ type HomeProps = {
 export default function Home({ posts }: HomeProps) {
   return (
     <>
-      <SEO />
+      <SEO page="Blog" />
       <BoundedContainer className={css.blogListMainContainer}>
         <h1 className="text-4xl font-bold text-[#22222a]">Blog Posts</h1>
         <div className="mt-8">
           <p className="text-[#6B6D85] font-semibold text-xl">Featured</p>
           <div className={css.blogList}>
             {posts.map(({ slug, frontmatter }) => (
-              <Link key={slug} href={`/blogs/${slug}`} legacyBehavior>
+              <Link key={slug} href={`/blog/${slug}`} legacyBehavior>
                 <div className={css.blogCard}>
                   <Image
                     src={frontmatter.image}
