@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://respondnow.io/
+
+# Sitemaps
+Sitemap: https://respondnow.io/sitemap.xml
