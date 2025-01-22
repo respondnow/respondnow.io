@@ -1,6 +1,6 @@
 ---
 title: RespondNow - An Open Source Slack App For Managing Incidents
-date: 30th August, 2024
+date: 22nd January, 2025
 author: Umasankar Mukkara
 author_linkedin: https://www.linkedin.com/in/uma-mukkara/
 tag: RespondNow
@@ -54,4 +54,4 @@ You can create a Github issue [here](https://github.com/respondnow/respondnow/is
 
 **Do you like this open source project?**
 
-Give a [star](https://github.com/respondnow/respond) on GitHub.
+Give a [star](https://github.com/respondnow/respondnow) on GitHub.
