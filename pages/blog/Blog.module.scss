@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
+    gap: 1rem;
     cursor: pointer;
 
     .blogCard {
@@ -17,6 +18,11 @@
       border-radius: 8px;
       padding: 1rem;
       width: 450px;
+
+      .blogCardCover {
+        width: full;
+        height: 208px;
+      }
     }
   }
 }

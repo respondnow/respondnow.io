@@ -29,7 +29,7 @@ export default function Home({ posts }: HomeProps) {
                     alt={frontmatter.title}
                     width={450}
                     height={270}
-                    className="w-full h-auto"
+                    className={css.blogCardCover}
                   />
                   <div className="flex items-center justify-between gap-4 mt-4">
                     <div className="flex items-center gap-2">
